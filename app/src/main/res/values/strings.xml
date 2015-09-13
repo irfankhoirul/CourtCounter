@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Court Counter</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_result">Result</string>
+
+    <string name="result">Result</string>
+    <string name="reset">Reset</string>
+    <string name="freeThrow">Free Throw</string>
+    <string name="twoPoints">+ 2 Points</string>
+    <string name="threePoints">+ 3 Points</string>
+    <string name="initialScore">0</string>
+    <string name="teamAScore">Detroit Pistons</string>
+    <string name="teamBScore">Brooklyn Nets</string>
+    <string name="noWinner">No One</string>
+    <string name="imageMiddleDesc">This is image for used to separate two view group, team A and team B</string>
+</resources>

@@ -13,8 +13,13 @@ public class Result extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getSupportActionBar().setIcon(R.drawable.trophy_w_24);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+
         setContentView(R.layout.activity_result);
 
+
+        TextView congrat = (TextView) findViewById(R.id.textView2);
         //Get Intent
         Intent i = getIntent();
         int win = i.getIntExtra("winner", 0);
@@ -30,9 +35,10 @@ public class Result extends AppCompatActivity {
             winner = getString(R.string.teamBScore);
             winn.setImageResource(R.drawable.bkl);
         }
-        else winner = getString(R.string.noWinner);
-
-
+        else {
+            winner = getString(R.string.noWinner);
+            congrat.setText("You have to work harder!");
+        }
 
         //Showing result
         TextView resultWinner = (TextView) findViewById(R.id.resultWinner);

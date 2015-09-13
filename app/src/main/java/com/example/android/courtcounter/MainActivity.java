@@ -10,11 +10,17 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     int scoreTeamA = 0, scoreTeamB = 0;
+    TextView scoreViewA, scoreViewB;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getSupportActionBar().setIcon(R.drawable.clipboard);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
         setContentView(R.layout.activity_main);
+
+        scoreViewA = (TextView) findViewById(R.id.team_a_score);
+        scoreViewB = (TextView) findViewById(R.id.team_b_score);
     }
 
     /**
@@ -101,16 +107,16 @@ public class MainActivity extends AppCompatActivity {
      * Menampilkan skor tim A saat ini
      */
     public void displayForTeamA(int score) {
-        TextView scoreView = (TextView) findViewById(R.id.team_a_score);
-        scoreView.setText(String.valueOf(score));
+        scoreViewA = (TextView) findViewById(R.id.team_a_score);
+        scoreViewA.setText(String.valueOf(score));
     }
 
     /**
      * Menampilkan skor tim B saat ini
      */
     public void displayForTeamB(int score) {
-        TextView scoreView = (TextView) findViewById(R.id.team_b_score);
-        scoreView.setText(String.valueOf(score));
+        scoreViewB = (TextView) findViewById(R.id.team_b_score);
+        scoreViewB.setText(String.valueOf(score));
     }
 
     @Override

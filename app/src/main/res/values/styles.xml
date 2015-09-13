@@ -11,6 +11,7 @@
         <item name="colorPrimary">#F44336</item>
         <item name="colorButtonNormal">#FF5722</item>
         <item name="colorPrimaryDark">#D32F2F</item>
+
     </style>
 
 </resources>

@@ -17,6 +17,7 @@
             </intent-filter>
         </activity>
         <activity
+            android:logo="@drawable/trophy"
             android:name=".Result"
             android:label="@string/title_activity_result" >
         </activity>
